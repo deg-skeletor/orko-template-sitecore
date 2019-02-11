@@ -1,0 +1,13 @@
+body {
+    font-family: var(--font-family-primary);
+}
+
+@media screen and (--medium) {
+
+    .wrapper {
+        margin: 0 auto;
+        padding: 0 1rem;
+        max-width: var(--page-width);
+    }
+
+}

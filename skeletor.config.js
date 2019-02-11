@@ -10,16 +10,6 @@ module.exports = {
 			]
 		},
 		{
-			name: 'export',
-			subTasks: [
-				require('./skeletor/export/patterns.config.js'),
-				require('./skeletor/export/css.config.js'),
-				require('./skeletor/export/js.config.js'),
-				require('./skeletor/export/static.config.js')
-			],
-			environment: 'production'
-		},
-		{
 			name: 'serve',
 			subTasks: [
 				require('./skeletor/serve.config.js')

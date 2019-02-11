@@ -1,0 +1,35 @@
+.multi-pod-group-item {
+    flex-basis: 21rem;
+    padding: 2.25rem 1rem;
+    text-align: center;
+
+    &__heading {
+        font-size: 1.875rem;
+        margin-bottom: 1rem;
+    }
+
+    &__description {
+        line-height: 1.2;
+        margin-bottom: 1.5rem;
+    }
+
+    &__link {
+        color: var(--color-white);
+        text-decoration: underline;
+
+        &:hover {
+            color: var(--color-white);
+            text-decoration: none;
+        }
+
+    }
+
+}
+
+@media screen and (--medium) {
+
+    .multi-pod-group-item {
+        padding: 4.5rem 2rem;
+    }
+
+}

@@ -1,0 +1,74 @@
+.quote-request {
+
+    &__section-columns {
+        display: flex;
+        margin-bottom: 2rem;
+
+        .quote-request__fields-heading {
+            color: color-mod(var(--color-gray-30) tint(10%));
+            font-family: var(--font-family-primary);
+            font-size: 1rem;
+            margin-bottom: 2rem;
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+    }
+
+    &__section {
+        & > .wrapper > h1,
+        & > .wrapper > p,
+        & > .wrapper > ul,
+        & > .wrapper > ol,
+        & > h1,
+        & > p,
+        & > ul,
+        & > ol {
+            margin-left: 1rem;
+            margin-right: 1rem;
+        }
+        
+    }
+
+}
+
+.is-quote-request-page {
+
+    .quote-request__wrapper,
+    .quote-request__action-buttons .wrapper {
+        margin: 0 auto;
+    }
+
+}
+
+@media screen and (--medium) {
+
+    .quote-request {
+
+        &__section-columns {
+
+            .quote-request__fields-heading {
+                font-size: 1.375rem;
+            }
+
+        }
+    
+        &__section {
+
+            & > .wrapper > h1,
+            & > .wrapper > p,
+            & > .wrapper > ul,
+            & > .wrapper > ol,
+            & > h1,
+            & > p,
+            & > ul,
+            & > ol {
+                margin-left: 0;
+                margin-right: 0;
+            }
+            
+        }
+
+    }
+
+}

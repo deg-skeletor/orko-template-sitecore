@@ -1,0 +1,46 @@
+@media screen and (max-width: 47.9375em) {
+    
+    .toggle-section__wrapper.toggle-is-inited {
+    
+        .toggle-section__trigger {
+            cursor: pointer;
+            position: relative;
+
+            &:after {
+                color: var(--color-blue-20);
+                content: "\e901";
+                font-family: var(--font-family-icons);
+                font-size: 0.75rem;
+                position: absolute;
+                right: 0.5rem;
+                top: 50%;
+                transform: translateY(-50%) rotate(270deg);
+                transform-origin: center center;
+                transition: transform var(--anim-duration);
+            }
+
+        }
+
+        .toggle-section__target {
+            padding: 1rem 0.5rem 0;
+        }
+
+        &.toggle-is-open {
+
+            .toggle-section__trigger:after {
+                transform: translateY(-50%) rotate(90deg);
+            }
+
+        }
+
+        &:not(.toggle-is-open) {
+
+            .toggle-section__target {
+                display: none;
+            }
+
+        }
+
+    }
+
+}

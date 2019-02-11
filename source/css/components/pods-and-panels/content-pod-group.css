@@ -1,0 +1,125 @@
+.content-pod-group {
+    padding: 2rem 0;
+
+    .wrapper {
+        overflow: hidden;
+        padding: 0 16vw 0 0.75rem;
+    }
+
+    .grid {
+        display: block;
+        overflow: visible !important; /* needed for JS */
+        transform: translateX(-0.3125rem);
+    }
+
+    .grid__item {
+        height: 100%;
+        padding: 0 0.5rem 1rem;
+    }
+
+    .content-pod {
+        background-color: var(--color-white);
+        box-shadow: 0px 0.0375rem 0.875rem rgba(178, 178, 178, 0.3);
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+
+
+        img {
+            object-fit: cover;
+            object-position: center;
+        }
+
+        &:hover {
+            .content-pod__heading,
+            .button {
+                transform: translateY(0) !important; /* needed for JS */
+            }
+
+            .content-pod__description {
+                opacity: 1;
+            }
+        }
+
+        &__content {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            justify-content: center;
+            padding: 1.75rem 1rem 2rem;
+            text-align: center;
+        }
+
+        &__heading {
+            font-size: 1.75rem;
+            margin-bottom: 0.125rem;
+            transform: translateY(0);
+        }
+
+        &__heading,
+        .button {
+            transition: transform var(--anim-duration-half);
+        }
+
+        &__description {
+            color: var(--color-gray-30);
+            margin-bottom: 0;
+            transition: opacity var(--anim-duration-half);
+        }
+
+        .button {
+            margin-top: 0.5rem;
+            align-self: center;
+        }
+    }
+
+    &:before {
+        content: "small";
+        display: none;
+    }
+}
+
+@media screen and (--medium) {
+    .content-pod-group {
+        background-color: var(--color-gray-10);
+        padding: 2rem 1rem 3rem;
+
+        &:before {
+            content: "medium";
+        }
+
+        .wrapper {
+            padding: 0;
+        }
+
+        .grid {
+            display: flex;
+            flex-wrap: nowrap;
+            transform: translate(0);
+        }
+
+        .grid__item {
+            height: auto;
+            padding: 0 0.25rem 1rem;
+        }
+    }
+
+    .content-pod {
+        &__description {
+            opacity: 0;
+        }
+    }
+}
+
+@media screen and (--large) {
+    .content-pod-group {
+        &:before {
+            content: "large";
+        }
+
+        .grid__item {
+            padding: 0 0.5rem;
+
+        }
+    }
+}

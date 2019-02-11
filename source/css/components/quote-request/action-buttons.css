@@ -1,0 +1,110 @@
+:root {
+    --action-button-gray-10: #d6d6d6;
+}
+
+.is-quote-request-page .offscreen__outer-wrapper {
+    overflow: initial;
+}
+
+.quote-request {
+
+    &__action-buttons {
+        background-color: #f1f1f1;
+        bottom: 0;
+        left: 0;
+        padding: 1rem;
+        position: sticky;
+        width: 100%;
+        z-index: 50;
+
+        .wrapper {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .button {
+            font-size: 0.875rem;
+            margin-right: auto;
+            min-width: 6rem;
+            padding: 0.625rem 1.125rem;
+        }
+
+        .button--right {
+            margin-right: 0;
+
+            & + .button--right {
+                margin-left: 1rem;
+            }
+
+        }
+
+        .button--secondary {
+            background-color: var(--action-button-gray-10);
+            border-color: var(--action-button-gray-10);
+            color: var(--color-gray-40);
+            transition: all var(--anim-duration-half);
+
+            &:hover {
+                background-color: color-mod(var(--action-button-gray-10) shade(10%));
+                border-color: color-mod(var(--action-button-gray-10) shade(10%));
+            }
+
+        }
+
+    }
+
+}
+
+@media screen and (max-width: 47.9375em) {
+
+    .quote-request {
+
+        &__action-buttons {
+
+            .button {
+                align-self: flex-start;
+
+                &.button--pre-save {
+                    background-color: transparent;
+                    border: 0;
+                    bottom: 1rem;
+                    color: var(--color-blue-10);
+                    padding: 0;
+                    position: absolute;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+
+                    & + .button {
+                        margin-bottom: 1.75rem;
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+@media screen and (--medium) {
+
+    .quote-request {
+
+        &__action-buttons {
+            padding: 1rem 0;
+
+            .button {
+                font-size: 1rem;
+                min-width: 9.25rem;
+                padding: .75rem 1.25rem;
+            }
+
+        }
+
+    }
+
+}

@@ -1,0 +1,50 @@
+.pod-grid {
+    padding: 1.25rem 1rem;
+
+    .grid__item + .grid__item {
+        margin-top: 1rem;
+    }
+
+    &__item {
+        background-color: var(--color-blue-40);
+        color: var(--color-white);
+        padding: 1.5rem;
+        height: 100%;
+    }
+}
+
+@media screen and (--medium) {
+
+    .pod-grid {
+        padding: 2.5rem 0 0.5rem;
+
+        .wrapper {
+            max-width: 62.375rem;
+        }
+
+        .grid__item {
+            padding-left: 1.25rem;
+            padding-right: 1.25rem;
+            margin-bottom: 2rem;
+
+            &:nth-child(2n+1) {
+                padding-left: 0;
+            }
+
+            &:nth-child(2n+2) {
+                padding-right: 0;
+            }
+
+            & + .grid__item {
+                margin-top: 0;
+            }
+
+        }
+
+        &__item {
+            padding: 1.5rem 2.25rem 1rem;
+        }
+
+    }
+
+}

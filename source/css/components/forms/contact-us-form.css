@@ -1,0 +1,27 @@
+.contact-us {
+	&__button {
+		float: right;
+		margin-bottom: 2rem;
+	}
+	&__wrapper {
+		justify-content: space-between;
+		padding: 1.5rem;
+		background-color: var(--color-gray-10);
+		color: var(--color-gray-30);
+		textarea {
+			resize: vertical;
+		}
+	}
+}
+
+@media screen and (--medium) {
+	.contact-us {
+		&__wrapper {
+			background-color: var(--color-gray-10);
+			padding: 4.5rem 3.5rem 0 3.5rem;
+		}
+		&__headlines {
+			padding-top: 1rem;
+		}
+	}
+}

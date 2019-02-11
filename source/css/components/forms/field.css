@@ -1,0 +1,42 @@
+.field {
+    margin-bottom: 2rem;
+    .validation-field__errors {
+        color: var(--color-red-10);
+    }
+
+    &.has-errors input,
+    &.has-errors select,
+    &.has-errors textarea {
+        background-color: var(--color-pink-10);
+    }
+
+    &__label,
+    &__input {
+        display: block;
+    }
+
+    &__label {
+        color: var(--color-gray-30);
+        margin-bottom: 0.25rem;
+    }
+
+    &__input {
+        width: 100%;
+    }
+
+    &__error-messages {
+        color: var(--color-red-10);
+        font-size: 0.875rem;
+        margin-top: 0.125rem;
+    }
+
+    &__note {
+        color: color-mod(var(--color-gray-30) tint(10%));
+        font-size: 0.875rem;
+        font-style: italic;
+        line-height: 1.4;
+        margin-bottom: -1.1875rem;
+    }
+
+}
+

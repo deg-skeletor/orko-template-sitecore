@@ -1,0 +1,88 @@
+.quote-request-sidebar { 
+    background-color: var(--color-blue-40);
+    color: var(--color-white);
+    display: none;
+        font-size: 0.875rem;
+    padding: 3rem 2.375rem;
+
+    &.is-open {
+        display: block;
+        z-index: 60;
+    }
+
+    &__heading,
+    &__item-heading {
+        font-family: var(--font-family-primary);
+        font-weight: 700;
+    }
+
+    &__heading {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    &__item-heading {
+        font-size: 0.875rem;
+        margin-bottom: 0.25rem;
+    }
+
+    &__item {
+
+        & + .quote-request-sidebar__item {
+            margin-top: 0.75rem;
+        }
+
+    }
+
+    &__item-description {
+        line-height: 1.4;
+        margin-bottom: 0;
+    }
+
+    &__hide-trigger {
+        margin-top: 1.5rem;
+    }
+
+    &__show-trigger {
+        background-color: var(--color-blue-20);
+        border: 0;
+        border-radius: 50%;
+        color: var(--color-white);
+        cursor: pointer;
+        float: right;
+        font-size: 1.25rem;
+        height: 2rem;
+        margin-left: 1rem;
+        width: 2rem;
+    }
+
+}
+
+@media screen and (max-width: 47.9375em) {
+
+    .quote-request-sidebar {
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+
+}
+
+@media screen and (--medium) {
+
+    .quote-request-sidebar {
+        align-self: flex-start;
+        display: block;
+        flex-basis: 29.5rem;
+        margin: 5rem 0;
+
+        &__hide-trigger,
+        &__show-trigger {
+            display: none;
+        }
+
+    }
+
+}

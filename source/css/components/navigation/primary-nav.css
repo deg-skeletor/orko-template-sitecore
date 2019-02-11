@@ -1,0 +1,123 @@
+.primary-nav {
+    background-color: var(--color-gray-10);
+    height: 100%;
+    left: 0;
+    padding-top: 6rem;
+    position: absolute;
+    top: 0;
+    transform: translateX(-100%);
+    transition: transform var(--anim-duration-half);
+    width: 13.75rem;
+
+    &__list-item {
+
+        & + .primary-nav__list-item {
+            border-top: 0.0625rem solid var(--color-gray-20);
+            margin-top: 0;
+        }
+
+        &.has-children {
+
+            .primary-nav__link {
+                padding-right: 3rem;
+                position: relative;
+
+                &:after {
+                    content: "\e901";
+                    font-family: var(--font-family-icons);
+                    position: absolute;
+                    right: 1rem;
+                    top: 50%;
+                    transform: translateY(-50%) rotate(90deg);
+                    transition: transform var(--anim-duration-half);
+                }
+
+            }
+
+            &.toggle-is-open .primary-nav__link {
+                color: var(--color-blue-10);
+
+                &:after {
+                    transform: translateY(-50%) rotate(270deg);
+                }
+
+            }
+
+        }
+
+    }
+
+    &__link {
+        color: var(--color-blue-40);
+        display: block;
+        padding: 1rem;
+
+        &:hover {
+            color: var(--color-blue-10);
+            text-decoration: none;
+        }
+
+    }
+}
+
+@media screen and (--large) {
+
+    .primary-nav {
+        background-color: transparent;
+        margin-left: 2rem;
+        position: static;
+        transform: none;
+        width: auto;
+
+        &__list {
+            display: flex;
+            list-style: none;
+
+        }
+
+        &__list-item {
+
+            &.has-children {
+
+                .primary-nav__link {
+                    padding-right: 1.375rem;
+
+                    &:after {
+                        display: none;
+                    }
+
+                }
+
+                &:hover .primary-nav__link {
+                    background-color: var(--color-gray-10);
+                    color: var(--color-blue-10);
+                    text-decoration: none;
+                }
+
+            }
+
+            & + .primary-nav__list-item {
+                border-top: 0;
+            }
+
+        }
+
+        &__link {
+            display: block;
+            padding: 0.75rem 1.375rem;
+            white-space: nowrap;
+        }
+
+    }
+
+}
+
+
+
+@media screen and (min-width: 69.25rem) {
+
+    .primary-nav {
+        margin-left: 5rem;
+    }
+
+}

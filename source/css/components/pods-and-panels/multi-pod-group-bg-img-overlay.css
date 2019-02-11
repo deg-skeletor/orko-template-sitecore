@@ -1,0 +1,51 @@
+.multi-pod-group--bg-img-overlay {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  .wrapper {
+    align-items: center;
+    color: var(--color-white);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    &:before {
+      background: linear-gradient(
+        120deg,
+        rgba(203, 44, 48, 0.9),
+        rgba(136, 27, 38, 0.9)
+      );
+      bottom: 0;
+      content: "";
+      left: 0;
+      opacity: 1;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+
+  .multi-pod-group-item {
+    z-index: 1;
+  }
+}
+
+@media screen and (--medium) {
+  .multi-pod-group--bg-img-overlay {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+}
+
+@media screen and (--large) {
+  .multi-pod-group--bg-img-overlay {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+}

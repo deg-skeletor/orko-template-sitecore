@@ -1,0 +1,30 @@
+body,
+.offscreen__outer-wrapper,
+.offscreen__inner-wrapper {
+    min-height: 100vh;
+}
+
+.offscreen__inner-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+#quote-request-app {
+    flex-grow: 1;
+}
+
+.footer {
+    margin-top: auto;
+}
+
+.button.quote-request__submit-button {
+    display: block;
+    margin: 0 auto;
+}

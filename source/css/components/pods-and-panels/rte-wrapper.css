@@ -1,0 +1,11 @@
+.rte-wrapper {
+    padding: 1.75rem;
+}
+
+@media screen and (--medium) {
+
+    .rte-wrapper {
+        padding: 1rem 0 2rem;
+    }
+
+}

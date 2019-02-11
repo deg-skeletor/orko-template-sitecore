@@ -1,0 +1,16 @@
+.article-grid {
+    padding: 3rem 1rem;
+
+    &__heading {
+        margin-bottom: 1.25rem;
+    }
+
+}
+
+@media screen and (--medium) {
+
+    .article-grid {
+        padding: 3rem 0;
+    }
+
+}

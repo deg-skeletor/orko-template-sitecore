@@ -1,0 +1,27 @@
+.header.header--reduced {
+
+    .header__main-wrapper {
+        justify-content: center;
+    }
+
+    .logo {
+        width: 5.5rem;
+    }
+
+}
+
+@media screen and (--medium) {
+
+    .header.header--reduced {
+
+        .wrapper {
+            padding: 1rem 0;
+        }
+
+        .logo {
+            width: 8rem;
+        }
+
+    }
+
+}

@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Zilla+Slab');
+
+body {
+	color: var(--color-text);
+	font-family: var(--font-family-primary);
+	font-size: var(--base-font-size);
+	font-weight: 400;
+}
+
+p {
+	line-height: 1.8;
+	margin: 0 0 var(--spacing-vertical) 0;
+}
+
+.note {
+	color: color-mod(var(--color-gray-20) shade(20%));	
+}

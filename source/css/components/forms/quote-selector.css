@@ -1,0 +1,289 @@
+.quote-selector {
+    background-image: linear-gradient(120deg, var(--color-red-10), var(--color-red-20));
+    color: var(--color-white);
+    padding: 3.125rem 0 2.5rem;
+    text-align: center;
+
+    a {
+        color: var(--color-white);
+    }
+
+    &__subheading {
+        display: block;
+        font-size: 1rem;
+        line-height: 1.625rem;
+        margin-bottom: 1.5rem;
+        max-width: 13.125rem;
+
+        a {
+            text-decoration: underline;
+        }
+    }
+
+    &__types {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 auto;
+        max-width: 20rem;
+    }
+
+    &__type {
+        height: 6rem;
+        margin-bottom: 1rem;
+        min-width: 5.375rem;
+        position: relative;
+        text-align: center;
+
+        &:nth-child(1n + 7) {
+            display: none;
+        }
+    }
+
+    &__type-label {
+        align-items: center;
+        border: 0.1875rem solid transparent;
+        border-radius: 0.625rem;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        font-size: 0.875rem;
+        height: 100%;
+        justify-content: flex-end;
+        transition: border-color var(--anim-duration-half);
+    }
+
+    &__type-label-text {
+        margin-bottom: 0.75rem;
+        margin-top: 0.375rem;
+    }
+
+    &__type-input:checked + .quote-selector__type-label {
+        border-color: var(--color-white);
+    }
+
+    &__icon {
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: -0.5rem;
+        width: 100%;
+    }
+
+    &__controls {
+        margin: 0 auto;
+        max-width: 14rem;
+        text-align: left;
+
+        .field {
+            margin-bottom: 1.375rem;
+            max-width: 11.25rem;
+            position: relative;
+
+            input {
+                background: transparent;
+                border: 0;
+                border-bottom: 0.0625rem solid var(--color-white);
+                border-radius: 0;
+                caret-color: var(--color-white);
+                color: var(--color-white);
+                font-size: 1.125rem;
+                height: 100%;
+                outline: none;
+                padding: 0.5rem 0;
+                width: 100%;
+
+                &:empty + label {
+                    transform: translateY(-50%);
+                }
+
+                &:valid + label,
+                &:focus + label {
+                    color: color-mod(var(--color-red-10) tint(70%));
+                    cursor: default;
+                    transform: translateY(-150%) scale(0.75);
+                }
+            }
+
+            label {
+                color: var(--color-white);
+                cursor: text;
+                font-size: 1.125rem;
+                margin-top: 0;
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform-origin: top left;
+                transition: transform var(--anim-duration-half), color var(--anim-duration-half);
+            }
+        }
+
+        .button {
+            flex-basis: 10.75rem;
+        }
+    }
+
+    &__static-icon {
+        fill: var(--color-white);
+        height: 65%;
+        left: 50%;
+        position: absolute;
+        top: 0.75rem;
+        transform: translateX(-50%);
+        width: 65%;
+    }
+
+}
+
+.quote-selector--dropdown {
+    .field {
+        max-width: none;
+    }
+
+    .quote-selector__button {
+        margin: 2rem auto 0;
+    }
+
+    .quote-selector__fields {
+        margin: 0 auto;
+        max-width: 50%;
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 35em) {
+    .quote-selector {
+        padding: 3.125rem 0 2.5rem;
+
+        &__subheading {
+            max-width: 100%;
+        }
+
+        &__types {
+            max-width: 100%;
+        }
+
+        &__controls {
+            justify-content: center;
+            display: flex;
+            max-width: 100%;
+
+            .field {
+                flex-basis: 11rem;
+                margin-bottom: 0;
+                margin-right: 1rem;
+
+                input {
+                    &:valid + label,
+                    &:focus + label {
+                        transform: translateY(-175%) scale(0.75);
+                    }
+                }
+            }
+        }
+
+        a {
+            text-decoration: underline;
+        }
+
+    }
+    .quote-selector--dropdown {
+        .field,
+        .quote-selector__controls {
+            flex-basis: 50%;
+            margin: 0 1rem;
+            min-width: 10rem;
+        }
+
+        .quote-selector__button {
+            display: block;
+        }
+
+        .quote-selector__controls {
+            .field {
+                input:empty + label {
+                    top: 60%;
+                }
+            }
+        }
+
+        .quote-selector__fields {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            max-width: 60%;
+        }
+
+        .quote-selector__heading {
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+@media screen and (min-width: 40.0625em) {
+    
+    .quote-selector {
+        
+        &__static-icon {
+            display: none;
+        }
+
+    }
+
+}
+
+@media screen and (--medium) {
+    .quote-selector {
+        padding: 1.5rem 2rem;
+
+        &__types {
+            flex-wrap: nowrap;
+        }
+
+        &__type {
+            height: 7.125rem;
+            min-width: 6.3125rem;
+
+            &:nth-child(1n + 7) {
+                display: block;
+            }
+        }
+
+        &__type-label-text {
+            margin-top: 1rem;
+        }
+    }
+}
+
+@media screen and (--large) {
+    .quote-selector {
+        bottom: 0;
+        left: 50%;
+        min-width: 47.75rem;
+        position: absolute;
+        text-align: left;
+        transform: translateX(-50%);
+
+        &__heading {
+            position: absolute;
+            left: 2.375rem;
+            margin-bottom: 0;
+        }
+
+        &__subheading {
+            display: block;
+            font-size: 1.125rem;
+            line-height: 2.75rem;
+            margin-bottom: 0.5rem;
+            padding-left: 15.5rem;
+        }
+    }
+    .quote-selector--dropdown {
+        .quote-selector__heading {
+            left: 0;
+            margin-bottom: 2rem;
+            position: relative;
+            text-align: center;
+        }
+    }
+}

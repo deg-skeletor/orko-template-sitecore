@@ -1,0 +1,118 @@
+.sub-nav {
+    background-color: var(--color-gray-10);
+    position: relative;
+    &__list {
+        text-align: center;
+        padding: 1.5rem;
+    }
+
+    &__secondary-items {
+        display: none;
+    }
+    &__link {
+        color: var(--color-blue-40);
+    }
+
+    &__link:hover {
+        color: var(--color-blue-10);
+        text-decoration: none;
+    }
+
+    .is-active {
+        color: var(--color-blue-10);
+        display: inline;
+        margin: 1.4rem;
+        position: relative;
+    }
+
+    &__link.is-active:after {
+        content: "\e901";
+        font-family: afi-icon;
+        position: absolute;
+        left: 4.8rem;
+        top: 50%;
+        -webkit-transform: translateY(-50%) rotate(90deg);
+        transform: translateY(-50%) rotate(270deg);
+        transform-origin: center center;
+        transition: transform var(--anim-duration);
+    }
+
+    &.sub-nav-is-open {
+        .sub-nav__secondary-items {
+            display: block;
+            list-style: none;
+        }
+
+        .sub-nav__list {
+            padding: 0;
+        }
+        .sub-nav__list-item {
+            border-bottom: 1px solid var(--color-blue-40);
+            padding: 1rem;
+        }
+
+        .is-active {
+            display: block;
+            margin: 0;
+        }
+
+        .sub-nav__link.is-active:after {
+            transform: translateY(-50%) rotate(90deg);
+            right: -2rem;
+        }
+    }
+}
+
+.sub-nav--fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.sub-nav-wrapper--increased-padding {
+    padding-bottom: 3.5rem;
+}
+
+.sub-nav-wrapper--full-height {
+    height: 100vh;
+}
+
+.sub-nav--full-height {
+    height: 100vh;
+    z-index: 30;
+}
+
+@media screen and (--large) {
+    .sub-nav {
+        &__list {
+            text-align: center;
+            padding: 0.5rem;
+        }
+        &__list-item {
+            display: inline-block;
+            margin: 0.8rem;
+            position: relative;
+            border: 0;
+            padding: 0;
+        }
+
+        &__link.is-active:after {
+            content: none;
+        }
+
+        &__secondary-items {
+            display: inline-block;
+        }
+    }
+
+    .sub-nav .is-active {
+        margin: 0.5rem;
+    }
+    .sub-nav--fixed {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+    }
+}

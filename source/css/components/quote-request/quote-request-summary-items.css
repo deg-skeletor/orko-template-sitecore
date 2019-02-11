@@ -1,0 +1,32 @@
+.quote-request__summary-items {
+    margin-bottom: 4rem;
+}
+
+
+
+.quote-request__summary-item {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+    & + .quote-request__summary-item {
+        margin-top: 2rem;
+    }
+
+    &-actions-text {
+        margin-right: 2rem;
+    }
+
+    strong {
+        color: color-mod(var(--color-gray-30) tint(10%));
+    }
+
+    .button-bare {
+
+        & + .button-bare {
+            margin-left: 2.5em;
+        }
+
+    }
+
+}

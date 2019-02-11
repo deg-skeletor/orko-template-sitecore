@@ -1,0 +1,33 @@
+.hero-reduced {
+    background: linear-gradient(120deg, color-mod(var(--color-red-10) alpha(90%)), color-mod(var(--color-red-20) alpha(90%)));
+    margin-bottom: 1.25rem;
+    padding: 2.5rem 1rem;
+
+    span {
+        margin-right: 1rem;
+    }
+    
+    h1 {
+        align-items: center;
+        color: var(--color-white);
+        display: flex;
+        font-size: 1.5rem;
+        margin-bottom: 0;
+    }
+
+}
+
+@media screen and (--medium) {
+
+    .hero-reduced {
+        margin-bottom: 2rem;
+        padding-left: 0;
+        padding-right: 0;
+        
+        h1 {
+            font-size: 2rem;
+        }
+
+    }
+
+}

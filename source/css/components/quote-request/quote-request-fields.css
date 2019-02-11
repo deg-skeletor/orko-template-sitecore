@@ -1,0 +1,88 @@
+.quote-request {
+
+    &__fields {
+        background-color: var(--color-gray-10);
+        flex-grow: 1;
+        padding: 1.5rem 1rem;
+    }
+
+    &__fields-heading,
+    &__fields-subheading {
+        font-family: var(--font-family-primary);
+    }
+
+    &__fields-heading {
+        font-size: 1.375rem;
+        margin-bottom: 1rem;
+    }
+
+    &__fields-subheading {
+        font-size: 1.125rem;
+    }
+
+    &__fields--separated {
+        background: transparent;
+        left: 0;
+        padding: 0;
+
+        .fields-row {
+            background-color: var(--color-gray-10);
+            margin-bottom: 0.25rem;
+            padding: 2.25rem;
+        }
+
+        .field {
+            display: flex;
+            justify-content: space-between;
+            max-width: none;
+        }
+
+        .field__label {
+            font-weight: 700;
+        }
+
+        .field__sublabel {
+            display: block;
+            font-weight: 400;
+            margin-top: 0.25rem;
+        }
+
+        .field__label-wrapper {
+            padding-right: 2rem;
+        }
+
+        .field__input-wrapper {
+            flex-basis: 12rem;
+        }
+
+        .fields-row .button-bare.field__sidebar-trigger-text {
+            margin-top: 1rem;
+        }
+
+    }
+
+    &__field {
+        margin-bottom: 1rem;
+    }
+
+}
+
+@media screen and (--medium) {
+
+    .quote-request {
+
+        &__fields {
+            padding: 2.625rem 2.25rem;
+        }
+
+        &__fields--separated {
+            padding: 0;
+        }
+
+        &__fields-heading {
+            margin-bottom: 2rem;
+        }
+
+    }
+
+}

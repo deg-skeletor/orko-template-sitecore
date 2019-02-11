@@ -1,0 +1,45 @@
+.landing-page-hero__wrapper {
+	display: block;
+	position: relative;
+
+	.wrapper {
+		height: 100%;
+		position: absolute;
+		top: 0;
+	}
+
+	.logo__link {
+		left: 0.5rem;
+		position: absolute;
+		top: 0.8rem;
+		width: 5.5rem;
+	}
+
+	.hero__wrapper {
+		display: block;
+	}
+
+}
+
+@media screen and (--large) {
+
+	.landing-page-hero__wrapper {
+		display: block;
+		height: 32.5rem;
+		overflow: hidden;
+
+		.wrapper {
+			height: 100%;
+			position: relative;
+		}
+		
+		.logo__link {
+			left: 1rem;
+			position: absolute;
+			top: 1.87rem;
+			width: 9.75rem;
+		}
+		
+	}
+
+}
