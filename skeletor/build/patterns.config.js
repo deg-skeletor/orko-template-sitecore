@@ -1,10 +1,12 @@
+const {patternLabConfig} = require('../common/patterns.config.js');
+
 module.exports = {
-	name: "patterns",
+	name: 'patterns',
 	plugins: [
 		{
-			"name": "@deg-skeletor/plugin-patternlab",
-			"config": {
-				"patternLabConfig": require('../patterns-common').build
+			name: '@deg-skeletor/plugin-patternlab',
+			config: {
+				patternLabConfig
 			}
 		}
 	]
