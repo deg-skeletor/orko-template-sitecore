@@ -1,8 +1,4 @@
-const {
-	input,
-	output,
-	plugins
-} = require('../common/js.config.js');
+const {input, output, plugins} = require('../common/js.config.js');
 
 module.exports = {
 	name: 'js',

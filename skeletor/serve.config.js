@@ -1,18 +1,18 @@
 module.exports = {
-	name: "serve",
+	name: 'serve',
 	plugins: [
 		{
-			"name": "@deg-skeletor/plugin-express",
-			"config": {
-				"port": process.env.PORT || 3001,
-				"entryPoints": [
+			name: '@deg-skeletor/plugin-express',
+			config: {
+				port: process.env.PORT || 3001,
+				entryPoints: [
 					{
-						"entry": '../patternlab',
-						"route": '/'
+						entry: '../patternlab',
+						route: '/'
 					}
 				],
-				"currentDirectory": __dirname,
-				"middleware": []
+				currentDirectory: __dirname,
+				middleware: []
 			}
 		}
 	]
