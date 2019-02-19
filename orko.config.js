@@ -2,15 +2,15 @@ module.exports = {
     postinstall: {
         files: [
             {
-                src: 'orko/.gitignore',
+                src: '/orko/.gitignore',
                 dest: '/.gitignore'
             },
             {
-                src: 'orko/package.json',
+                src: '/orko/package.json',
                 dest: '/package.json'
             },
             {
-                src: 'orko/README.md',
+                src: '/orko/README.md',
                 dest: '/README.md'
             }
         ]
