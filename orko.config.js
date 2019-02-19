@@ -1,5 +1,5 @@
 module.exports = {
-    postInstall: {
+    postinstall: {
         files: [
             {
                 src: 'orko/.gitignore',
