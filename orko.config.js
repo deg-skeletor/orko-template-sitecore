@@ -1,6 +1,6 @@
 module.exports = {
-    postinstall: {
-        copy: [
+    hooks: {
+        afterdownload: [
             {
                 src: '/orko/.gitignore',
                 dest: '/.gitignore'
@@ -13,6 +13,7 @@ module.exports = {
                 src: '/orko/README.md',
                 dest: '/README.md'
             }
-        ]
+        ],
+        afterinstall: []
     }
 };
