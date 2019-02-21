@@ -14,6 +14,15 @@ module.exports = {
                 dest: '/README.md'
             }
         ],
-        afterinstall: []
+        afterinstall: [
+            {
+                src: '/orko/_01-foot.mustache',
+                dest: '/source/_meta/_01-foot.mustache'
+            },
+            {
+                src: '/orko/main.js',
+                dest: '/source/js/main.js'
+            }
+        ]
     }
 };
