@@ -17,7 +17,7 @@
         "@deg-skeletor/plugin-postcss": "^1.0.0",
         "@deg-skeletor/plugin-rollup": "^2.0.2",
         "@deg-skeletor/plugin-watch": "^1.0.0",
-        "@deg-skeletor/starterkit-mustache-default": "^1.1.0",
+        "@deg-skeletor/starterkit-mustache-default": "^1.0.1",
         "autoprefixer": "^8.6.5",
         "cssnano": "^3.10.0",
         "jest": "^23.6.0",
