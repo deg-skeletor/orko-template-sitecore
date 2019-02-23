@@ -37,6 +37,6 @@
     },
     "dependencies": {
         "systemjs": "^2.1.2",
-        "@degjs/module-loader": "^5.0.0"
+        "@degjs/module-loader": "^5.1.0"
     }
 }
