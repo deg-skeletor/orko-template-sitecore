@@ -65,16 +65,18 @@ module.exports = {
             layout: 'horizontal'
         }
     },
-    patternExport: [
-        {
-            patterns: 'components/*',
-            dest: './export/patterns/',
-            includeHeadFoot: false
-        },
-        {
-            patterns: 'pages/*',
-            dest: './export/patterns/',
-            includeHeadFoot: true
-        }
-    ]
+    patternExport: {
+        patternGroups: [
+            {
+                patterns: 'components/*',
+                dest: './export/patterns/',
+                includeHeadFoot: false
+            },
+            {
+                patterns: 'pages/*',
+                dest: './export/patterns/',
+                includeHeadFoot: true
+            }
+        ]
+    }
 };
