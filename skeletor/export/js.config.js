@@ -17,6 +17,15 @@ module.exports = {
 			}
 		},
 		{
+            name: '@deg-skeletor/plugin-rollup',
+            config: {
+                input: input, 
+                output: output(`export/js`, false),  
+                plugins: plugins(false),
+                experimentalCodeSplitting: true
+            }
+        },
+		{
 			name: '@deg-skeletor/plugin-copy',
 			config: {
 				directories: [{
