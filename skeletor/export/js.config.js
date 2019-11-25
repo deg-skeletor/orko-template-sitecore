@@ -22,7 +22,7 @@ module.exports = {
                 input: input, 
                 output: output(outputDir, false),  
 				plugins: [
-					plugins(false),
+					...plugins(false),
 					require('rollup-plugin-terser').terser()
 				],
 				experimentalCodeSplitting: true
