@@ -10,12 +10,24 @@ module.exports = {
 				input,
 				output: output(outputDir),
 				plugins: [
-					plugins(),
+					...plugins(),
 					require('rollup-plugin-terser').terser()
 				],
 				experimentalCodeSplitting: true
 			}
 		},
+		{
+            name: '@deg-skeletor/plugin-rollup',
+            config: {
+                input: input, 
+                output: output(outputDir, false),  
+				plugins: [
+					...plugins(false),
+					require('rollup-plugin-terser').terser()
+				],
+				experimentalCodeSplitting: true
+            }
+        },
 		{
 			name: '@deg-skeletor/plugin-copy',
 			config: {
