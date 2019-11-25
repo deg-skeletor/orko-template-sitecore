@@ -20,9 +20,12 @@ module.exports = {
             name: '@deg-skeletor/plugin-rollup',
             config: {
                 input: input, 
-                output: output(`export/js`, false),  
-                plugins: plugins(false),
-                experimentalCodeSplitting: true
+                output: output(outputDir, false),  
+				plugins: [
+					plugins(false),
+					require('rollup-plugin-terser').terser()
+				],
+				experimentalCodeSplitting: true
             }
         },
 		{
