@@ -7,9 +7,9 @@ module.exports = {
 			name: '@deg-skeletor/plugin-rollup',
 			config: {
 				input: input, 
-				output: output('patternlab/js'),  
-				plugins: plugins(),
-				experimentalCodeSplitting: true
+                output: output('patternlab/js', false),  
+                plugins: plugins(false),
+                experimentalCodeSplitting: true
 			}
 		},
 		{
