@@ -9,6 +9,7 @@ const init = () => {
     moduleLoader({
         basePath,
         filenameSuffix: '.js',
+        filenameNoModuleSuffix: '.js',
         enableObservation: false
     });
 }

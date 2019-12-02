@@ -12,8 +12,7 @@ module.exports = {
 				plugins: [
 					...plugins(),
 					require('rollup-plugin-terser').terser()
-				],
-				experimentalCodeSplitting: true
+				]
 			}
 		},
 		{
@@ -24,8 +23,7 @@ module.exports = {
 				plugins: [
 					...plugins(false),
 					require('rollup-plugin-terser').terser()
-				],
-				experimentalCodeSplitting: true
+				]
             }
         },
 		{

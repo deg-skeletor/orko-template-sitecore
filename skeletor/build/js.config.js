@@ -8,8 +8,7 @@ module.exports = {
 			config: {
 				input: input, 
 				output: output('patternlab/js'),  
-				plugins: plugins(),
-				experimentalCodeSplitting: true
+				plugins: plugins()
 			}
 		},
 		{
@@ -17,8 +16,7 @@ module.exports = {
 			config: {
 				input: input, 
                 output: output('patternlab/js', false),  
-                plugins: plugins(false),
-                experimentalCodeSplitting: true
+                plugins: plugins(false)
 			}
 		},
 		{
