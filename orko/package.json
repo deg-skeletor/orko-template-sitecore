@@ -22,7 +22,7 @@
         "@babel/preset-env": "^7.10.3",
         "@deg-skeletor/core": "^1.1.1",
         "@deg-skeletor/plugin-copy": "^1.0.3",
-        "@deg-skeletor/plugin-postcss": "^1.2.0",
+        "@deg-skeletor/plugin-postcss": "^1.1.0",
         "@deg-skeletor/plugin-rollup": "^4.0.0",
         "@deg-skeletor/plugin-tokenreplace": "^1.0.2",
         "@storybook/addon-a11y": "^5.3.19",
