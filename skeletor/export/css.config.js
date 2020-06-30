@@ -1,5 +1,5 @@
 const {files, plugins} = require('../common/css.config.js');
-const outputDir = '../src/Project/{{shortName}}/code/Content/{{shortName}}.Web/css';
+const outputDir = '../src/Project/[PROJECT SHORT NAME]/code/Content/[PROJECT SHORT NAME].Web/css';
 const path = require('path');
 const {pluginConfig:cacheBustingPluginConfig} = require('./cachebusting.config.js');
 

@@ -1,5 +1,5 @@
 const {input, output, plugins} = require('../common/js.config.js');
-const outputDir = '../src/Project/{{shortName}}/code/Scripts/{{shortName}}.Web';
+const outputDir = '../src/Project/[PROJECT SHORT NAME]/code/Scripts/[PROJECT SHORT NAME].Web';
 const {pluginConfig:cacheBustingPluginConfig} = require('./cachebusting.config.js');
 
 module.exports = {
