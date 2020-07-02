@@ -1,4 +1,5 @@
-const {files, plugins} = require('../common/css.config.js');
+const {files} = require('../common/css.config.js');
+const postcssConfig = require('../../postcss.config');
 const outputDir = '../src/Project/[PROJECT SHORT NAME]/code/Content/[PROJECT SHORT NAME].Web/css';
 const path = require('path');
 const {pluginConfig:cacheBustingPluginConfig} = require('./cachebusting.config.js');
@@ -10,7 +11,7 @@ module.exports = {
             name: '@deg-skeletor/plugin-postcss',
             config: {
                 files: files(outputDir),
-                plugins: plugins()
+                plugins: postcssConfig().plugins
             }
         },
         {
@@ -22,7 +23,7 @@ module.exports = {
                         dest: path.resolve(outputDir, 'rte.css')
                     }
                 ],
-                plugins: plugins({isRte: true})
+                plugins: postcssConfig({isRte: true}).plugins
             }
         },
         cacheBustingPluginConfig

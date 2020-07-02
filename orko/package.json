@@ -13,7 +13,7 @@
         "export": "skel export",
         "export-js": "skel export --only js",
         "export-css": "skel export --only css",
-        "export-static": "skel-export --only static",
+        "export-static": "skel export --only static",
         "deploy": "now --prod"
     },
     "devDependencies": {
@@ -38,6 +38,7 @@
         "jest": "^26.1.0",
         "postcss-color-mod-function": "^3.0.3",
         "postcss-custom-media": "^7.0.8",
+        "postcss-mixins": "^6.2.3",
         "postcss-custom-properties": "^9.1.1",
         "postcss-custom-selectors": "^5.1.2",
         "postcss-easy-import": "^3.0.0",

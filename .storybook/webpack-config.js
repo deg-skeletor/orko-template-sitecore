@@ -1,12 +1,13 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
-module.exports = async ({config}) => {
+module.exports = async (config) => {
     configJs(config);
     configCSS(config);
 
     return config;
 };
 
+/* Adds necessary babel configuration */
 function configJs(config) {
     const jsRule = config.module.rules.find(rule => '.js'.match(rule.test));
 

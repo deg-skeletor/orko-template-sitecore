@@ -1,4 +1,5 @@
 const path = require('path');
+const browserslist = require('browserslist');
 
 /* 
     Babel presets for legacy browsers (IE11, mostly). 
@@ -9,7 +10,7 @@ const legacyBabelPresets = [
         '@babel/preset-env',
         {
             modules: false,
-            targets: '> 1%, ie 11',
+            targets: browserslist(null, { env: 'legacy'}),
             useBuiltIns: 'entry',
             corejs: 3
         }
@@ -25,7 +26,7 @@ const modernBabelPresets = [
         '@babel/preset-env',
         {
             modules: false,
-            targets: 'Firefox >= 77, Edge >= 18, Chrome >= 82, iOS >= 12, ChromeAndroid >= 81',
+            targets: browserslist(null, { env: 'modern'}),
             useBuiltIns: 'entry',
             corejs: 3,
             exclude: ['@babel/plugin-transform-regenerator']
@@ -57,16 +58,17 @@ module.exports = {
             'CACHEBUSTER': () => Date.now().toString()
         }),
         /* Compile JS with babel with either modern or legacy presets */
-        require('@rollup/plugin-babel')({
+        require('@rollup/plugin-babel').default({
             include: [
                 'source/js/**',
                 'node_modules/@degjs/**'
             ],
             babelrc: false,
+            babelHelpers: 'bundled',
             presets: isModern ? modernBabelPresets : legacyBabelPresets
         }),
         /* Resolve node module imports */
-        require('@rollup/plugin-node-resolve')({
+        require('@rollup/plugin-node-resolve').default({
             browser: true
         }),
         /* Convert CommonJS node modules to ES6 */
