@@ -1,5 +1,5 @@
 const {directories} = require('../common/static.config.js');
-const outputDir = 'export';
+const outputDir = '../src/Project/[PROJECT SHORT NAME]/code/Content/[PROJECT SHORT NAME].Web';
 
 module.exports = {
     name: 'static',
