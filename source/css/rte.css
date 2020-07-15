@@ -1,0 +1,7 @@
+@import '00-variables/**/*.css';
+@import 'basics/00-reset.css';
+@import 'basics/headings.css';
+@import 'basics/images.css';
+@import 'basics/lists.css';
+@import 'basics/links.css';
+@import 'basics/text.css';

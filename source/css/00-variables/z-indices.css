@@ -1,0 +1,5 @@
+:root {
+    --z-index-dialog: 201;
+    --z-index-dialog-backdrop: 200;
+    --z-index-max: 9999;
+}

@@ -1,0 +1,13 @@
+.page-wrapper {
+
+}
+
+.main {
+    padding: var(--spacing-vertical) 0;
+}
+
+.container {
+    max-width: calc(var(--width-page) + 2rem);
+    padding-left: 1rem;
+    padding-right: 1rem;
+}

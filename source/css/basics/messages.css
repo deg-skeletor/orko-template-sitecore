@@ -1,0 +1,7 @@
+.error-message {
+    color: var(--color-error);
+}
+
+.form-message {
+    margin: 0 0 var(--spacing-vertical);
+}

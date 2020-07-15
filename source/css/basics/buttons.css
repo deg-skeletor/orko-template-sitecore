@@ -1,0 +1,41 @@
+button {
+	cursor: pointer;
+}
+
+.button {
+	appearance: none;
+	display: inline-block;
+	border: 0;
+	border-radius: var(--border-radius);
+	font-size: var(--font-size-base);
+	font-weight: var(--font-weight-normal);
+	font-family: var(--font-family-primary);
+	padding: 1em;
+	margin: 0;
+	text-align: center;
+
+	&:visited {
+
+	}
+
+    &:hover, 
+    &:focus {
+		text-decoration: none;
+	}
+
+	&:active {
+		
+	}
+
+	&:disabled {
+		background-color: var(--color-gray-50);
+		color: var(--color-gray-30);
+
+		&:hover,
+		&:focus,
+		&:active,
+		&:visited {
+            
+		}
+	}
+}
