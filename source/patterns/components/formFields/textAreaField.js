@@ -1,7 +1,7 @@
 import React from 'react';
 import Label from '../../basics/labels/label';
 import TextArea from '../../basics/inputs/textArea';
-import FieldErrorMessage from '../../basics/formMessages/fieldErrorMessage';
+import FieldErrorMessage from '../../basics/messages/fieldErrorMessage';
 
 function TextAreaField({
     id='text-area',
@@ -9,8 +9,8 @@ function TextAreaField({
     value,
     isRequired=false,
     isDisabled=false,
-    label='Text Area Field',
     isInvalid=false,
+    label='Text Area Field',
     size,
     maxLength,
     errorMessage
@@ -24,6 +24,7 @@ function TextAreaField({
                 value={value}
                 isRequired={isRequired}
                 isDisabled={isDisabled}
+                isInvalid={isInvalid}
                 maxLength = {maxLength}
                 size={size}
                 ariaDescribedBy={isInvalid ? `${id}_error` : null}

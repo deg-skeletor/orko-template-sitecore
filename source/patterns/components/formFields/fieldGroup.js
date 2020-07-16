@@ -1,5 +1,5 @@
 import React, {Children} from 'react';
-import FieldErrorMessage from '../../basics/formMessages/fieldErrorMessage';
+import FieldErrorMessage from '../../basics/messages/fieldErrorMessage';
 import classnames from 'classnames';
 
 function FieldGroup({

@@ -1,5 +1,3 @@
-import sampleIcon from '../../../images/samples/icon.svg';
-
 export default [
     {
         label: 'Primary Nav Link 1',

@@ -1,7 +1,7 @@
 import React from 'react';
 import Label from '../../basics/labels/label';
 import TextInput from '../../basics/inputs/textInput';
-import FieldErrorMessage from '../../basics/formMessages/fieldErrorMessage';
+import FieldErrorMessage from '../../basics/messages/fieldErrorMessage';
 
 function TextInputField({
     id='text-input-1',

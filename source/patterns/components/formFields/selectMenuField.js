@@ -1,7 +1,7 @@
 import React from 'react';
 import Label from '../../basics/labels/label';
 import SelectMenu from '../../basics/inputs/selectMenu';
-import FieldErrorMessage from '../../basics/formMessages/fieldErrorMessage';
+import FieldErrorMessage from '../../basics/messages/fieldErrorMessage';
 import classnames from 'classnames';
 
 
@@ -32,6 +32,7 @@ function SelectMenuField({
                 options={options}
                 isRequired={isRequired}
                 isDisabled={isDisabled}
+                isInvalid={isInvalid}
                 size={size}
                 ariaDescribedBy={isInvalid ? `${id}_error` : null}
             />           

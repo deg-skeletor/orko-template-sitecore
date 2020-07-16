@@ -4,7 +4,7 @@ import FieldErrorMessage from './fieldErrorMessage.js';
 import FormErrorMessage from './formErrorMessage.js';
 
 export default {
-    title: 'Basics/Messages'
+    title: 'Basics/Typography/Messages'
 };
 
 export const errorMessage = () => <ErrorMessage />

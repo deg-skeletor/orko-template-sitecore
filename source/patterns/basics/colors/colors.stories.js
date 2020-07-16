@@ -20,7 +20,7 @@ const secondaryColors = [
 ];
 
 export default {
-    title: 'Basics/Colors'
+    title: 'Basics/Graphic Elements/Colors'
 };
 
 export const primary = () => <ColorSwatches colors={primaryColors} />;

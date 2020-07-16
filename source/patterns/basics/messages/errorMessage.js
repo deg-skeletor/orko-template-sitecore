@@ -3,12 +3,11 @@ import classnames from 'classnames';
 
 function ErrorMessage({
     children='An unexpected error has occurred. Please try again.', 
-    cssClass,
-    dataAttrs={}
+    cssClass
 }) {
     const cssClasses = classnames('error-message', cssClass);
 
-    return <p className={cssClasses} {...dataAttrs}>{children}</p>
+    return <p className={cssClasses}>{children}</p>
 }
 
 export default ErrorMessage;

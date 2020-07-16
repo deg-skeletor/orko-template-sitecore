@@ -1,7 +1,6 @@
 import React from 'react';
 import Button from './button.js';
 import ButtonLink from './buttonLink.js';
-import IconButton from './iconButton.js';
 
 export default {
     title: 'Basics/Interface Elements/Buttons'

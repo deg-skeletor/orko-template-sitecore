@@ -1,7 +1,7 @@
 import React from 'react';
 import Label from '../../basics/labels/label';
 import Checkbox from '../../basics/inputs/checkbox';
-import FieldErrorMessage from '../../basics/formMessages/fieldErrorMessage';
+import FieldErrorMessage from '../../basics/messages/fieldErrorMessage';
 
 function CheckboxField({
     id='checkbox',

@@ -2,7 +2,7 @@ import React from 'react';
 import Table, {TableHeader, TableBody, TableRow, TableHeading, TableCell} from './table.js';
 
 export default {
-    title: 'Components/Table'
+    title: 'Basics/Tabular Data/Tables'
 };
 
 export const table = () => (
