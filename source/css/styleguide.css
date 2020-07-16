@@ -1,0 +1,24 @@
+@import './00-variables/**/*.css';
+
+.sg-color-swatches {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sg-color-swatch {
+    text-align: center;
+    width: 6em;
+    margin-right: 1em;
+    padding: .25em;
+    border: thin solid #ddd;
+}
+
+.sg-color-swatch__sample {
+    padding-top: 100%;
+    margin: 0 auto .25em auto;
+}
+
+.sg-color-swatch__name,
+.sg-color-swatch__code {
+    font-size: .875em;
+}

@@ -1,0 +1,15 @@
+a, 
+.link {
+
+	&:visited {
+		
+	}
+
+	&:hover, &:focus {
+		text-decoration: underline;
+	}
+
+	&:active {
+		
+	}
+}

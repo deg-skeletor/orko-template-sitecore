@@ -1,0 +1,29 @@
+body {
+	color: var(--color-text);
+	font-family: var(--font-family-primary);
+	font-size: var(--font-size-base);
+	font-weight: var(--font-weight-normal);
+	line-height: var(--line-height-base);
+}
+
+p {
+	margin: 0 0 var(--spacing-vertical) 0;
+}
+
+strong, 
+b {
+	font-weight: var(--font-weight-bold);
+}
+
+em, 
+i {
+	font-style: italic;
+}
+
+sup {
+	vertical-align: sup;
+}
+
+sub {
+	vertical-align: sub;
+}

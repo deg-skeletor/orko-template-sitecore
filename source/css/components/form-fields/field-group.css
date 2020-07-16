@@ -1,0 +1,23 @@
+.field-group {
+    margin-bottom: var(--spacing-vertical);
+}
+
+.field-group__label {
+    padding-bottom: .5em;
+}
+
+.field-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.field-list__item {
+    & + .field-list__item {
+        margin-top: .5em;
+    }
+
+    & .field {
+        margin-bottom: 0;
+    }
+}

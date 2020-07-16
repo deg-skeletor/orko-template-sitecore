@@ -1,0 +1,72 @@
+.input {
+    font-size: var(--font-size-base);
+    font-family: var(--font-family-primary);
+}
+
+.input--text,
+.input--select,
+.input--textarea {
+    border: 1px solid var(--color-text);
+    background-color: var(--color-white);
+    border-radius: var(--border-radius);
+    padding: .5em;
+    width: 100%;
+
+    &:disabled {
+        background-color: var(--color-gray-50);
+        border-color: var(--color-gray-40);
+        color: var(--color-gray-30);
+    }
+}
+
+.input--textarea {
+    min-height: 8em;  
+    max-width: 30em; 
+}
+
+.input--text,
+.input--select,
+.input--medium {
+    max-width: 20em;
+}
+
+.input--small {
+    max-width: 10em;
+}
+
+.input--large {
+    max-width: 30em;
+}
+
+.input--full {
+    max-width: none;
+}
+
+.input--radio, 
+.input--checkbox {
+    margin: .25em .25em 0 .125em;
+}
+
+.input--invalid {
+    border-color: var(--color-error);
+}
+
+::-webkit-input-placeholder {
+    font-style: italic; 
+}
+
+::-moz-placeholder {
+    font-style: italic; 
+}
+
+:-ms-input-placeholder { 
+    font-style: italic; 
+}
+
+:-moz-placeholder { 
+    font-style: italic; 
+}
+
+::placeholder {
+    font-style: italic; 
+}

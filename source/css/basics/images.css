@@ -1,0 +1,22 @@
+/* Emtpy, single class selectors for Sitecore RTE CSS class dropdown */
+.align-left {}
+.align-right {}
+.align-center {}
+
+.align-left,
+.align-right,
+.align-center {
+	margin: 0 auto var(--spacing-vertical) auto;
+}
+
+@media (--medium)  {
+	.align-left {
+		float: left;
+		margin: 0 var(--spacing-vertical) var(--spacing-vertical) 0;
+	}
+
+	.align-right {
+		float: right;
+		margin: 0 0 var(--spacing-vertical) var(--spacing-vertical);
+	}
+}
