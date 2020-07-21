@@ -38,6 +38,7 @@ module.exports = {
 					dest: `${outputDir}/vendor`
 				}]
 			}
-		}
+		},
+		cacheBustingPluginConfig
 	]
 };
