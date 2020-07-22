@@ -1,4 +1,5 @@
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const path = require('path');
 
 module.exports = async (config) => {
     configJs(config);
@@ -13,7 +14,7 @@ function configJs(config) {
 
     if(jsRule) {
         addBabelReactPreset(jsRule);
-        includeNodeModulesForBabel(jsRule);        
+        includeBabelDirectories(jsRule);        
     }
 }
 
@@ -28,15 +29,14 @@ function addBabelReactPreset(jsRule) {
     options.presets.push('@babel/preset-react');
 }
 
-/* Includes necessary package directories in node_modules that need to be compiled by Babel for es5 compatibility */
-function includeNodeModulesForBabel(jsRule) {
-    const excludeNodeModules = /node_modules\/(?!(@degjs)\/).*/;
-
-    if(jsRule.exclude.length) {
-        jsRule.exclude[0] = excludeNodeModules;
-    } else {
-        jsRule.exclude.push(excludeNodeModules);
-    }
+/* Includes directories to be compiled by Babel */
+function includeBabelDirectories(jsRule) {    
+    jsRule.exclude = [];
+    jsRule.include = [
+        path.resolve(__dirname), /* Storybook directory */
+        path.resolve(__dirname, '../source'), /* Source code directory */
+        path.resolve(__dirname, '../node_modules/@degjs') /* DEGJS node modules directory */
+    ];
 }
 
 /* Adds MiniCssExtractPlugin loader to create stylesheets */
