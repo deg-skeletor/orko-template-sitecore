@@ -7,7 +7,7 @@ function init() {
 }
 
 function initModuleLoader() {
-    let basePath = ENVIRONMENT === 'development' ? '../../js/' : '/Scripts/[PROJECT SHORT NAME].Web/';
+    let basePath = ENVIRONMENT === 'development' ? '/js/' : '/Scripts/[PROJECT SHORT NAME].Web/';
     let suffix = '.js?CACHEBUSTER';
     
     if (!supportsDynamicImports()) {
