@@ -25,6 +25,7 @@
         "@deg-skeletor/plugin-postcss": "^1.1.0",
         "@deg-skeletor/plugin-rollup": "^4.0.0",
         "@deg-skeletor/plugin-tokenreplace": "^1.0.2",
+        "@degjs/storybook-decorator-react-to-html": "^1.0.0",
         "@storybook/addon-a11y": "^5.3.19",
         "@storybook/addon-knobs": "^5.3.19",
         "@storybook/addon-viewport": "^5.3.19",

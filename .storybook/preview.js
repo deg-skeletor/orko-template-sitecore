@@ -1,5 +1,5 @@
 import { addDecorator, addParameters } from '@storybook/html';
-import renderToStaticMarkup from './decorators/renderToStaticMarkup.js';
+import reactToHtml from '@degjs/storybook-decorator-react-to-html';
 import scriptRunner from './decorators/scriptRunner.js';
 import { withHTML } from '@whitespace/storybook-addon-html/html';
 import { withA11y } from '@storybook/addon-a11y';
@@ -21,7 +21,7 @@ addParameters({
 });
 
 /* Add decorators */
-addDecorator(renderToStaticMarkup);
+addDecorator(reactToHtml);
 addDecorator(withHTML({
   prettier: {
     tabWidth: 4,
