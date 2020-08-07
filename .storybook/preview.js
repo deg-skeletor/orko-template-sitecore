@@ -1,6 +1,6 @@
 import { addDecorator, addParameters } from '@storybook/html';
 import reactToHtml from '@degjs/storybook-decorator-react-to-html';
-import scriptRunner from './decorators/scriptRunner.js';
+import scriptRunner from '@degjs/storybook-decorator-script-runner';
 import { withHTML } from '@whitespace/storybook-addon-html/html';
 import { withA11y } from '@storybook/addon-a11y';
 import '../source/css/global.css';
