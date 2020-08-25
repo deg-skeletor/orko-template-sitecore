@@ -26,7 +26,7 @@
         "@deg-skeletor/plugin-rollup": "^4.0.0",
         "@deg-skeletor/plugin-tokenreplace": "^1.0.2",
         "@degjs/storybook-decorator-react-to-html": "^1.0.0",
-        "@degjs/storybook-decorator-script-runner": "^1.0.0",
+        "@degjs/storybook-decorator-script-runner": "^2.0.0",
         "@storybook/addon-a11y": "^6.0.18",
         "@storybook/addon-essentials": "^6.0.18",
         "@storybook/html": "^6.0.18",
